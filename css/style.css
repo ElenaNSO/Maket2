@@ -397,7 +397,7 @@
   
 .trend-article {
   padding-top: 133px;
-  padding-right: 12px;/*2.6%;*/
+  padding-right: 12px;
   padding-left: 12px;/*2.6%;*/
   padding-bottom: 15px;
   
@@ -439,17 +439,34 @@
 }
 
 .trend-menu {
-  padding: 34px;/*4%;*/
-  
+  padding: 4% 4% 4% 4%;/*4%;*/
+    
   background-color: rgba(0,0,0,0);
   border: 3px solid #b59f5b;
 }
 
+.trend-item {
+  margin-right: 5%;
+  
+  font-family: "Open Sans", Arial, serif;
+  font-size: 14px; /*1.8vw;*/
+  font-weight: 700;
+  color: #b59f5b;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
+
+.trend-item:nth-child(n+2) {
+  margin-right: 0px;
+}  
+	
 .trend {
+  margin-top: 1.5%; 
+  
   width: 100%;/*calc (100% - 64px);*/
   
   text-transform: uppercase;
-  font-size: 20px; /*calc(0.48vw + 10px);*/
+  font-size: calc(0.48vw + 10px); /*;20px;*/
   line-height: 1.2;
   color: #ffffff;
   font-weight: 700;
@@ -485,8 +502,8 @@
 }
 
 .main-footer {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 
   display: flex;
   flex-direction: column;
@@ -534,7 +551,7 @@
   flex-wrap: wrap;
 }
 
-.item-article a,.trend-item {
+.item-article a {
   margin-right: 20px;
   
   font-family: "Open Sans", Arial, serif;
@@ -879,6 +896,7 @@
   align-items: center;
   
   background-color: rgba(0,0,0,0);	
+  
 }
 
 .product-article:nth-child(-n+2) {
@@ -887,6 +905,8 @@
 
 .product-description {
   width: 290px;
+  
+  flex-grow: 1;
   
   outline: 3px solid #b59f5b;
   outline-offset: 23px;
@@ -1191,6 +1211,10 @@
 	  flex-wrap: wrap;
   }
   
+  .trend {
+   line-height: 1.2;
+  }
+  
   .main-aside-goods {
     width: 100%;
     padding-left: 35px;/*3%;*/
@@ -1401,12 +1425,14 @@
   }
   
   .trend {
-    font-size: 16px;
+    margin-top: 18px;
+	
+	font-size: 16px;
   }
 
   .main-footer {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 12px;
+	padding-right: 12px;
   }
   
   .main-aside {
@@ -1446,7 +1472,7 @@
   }
 
   .article {
-    padding: 0px 14px 19px 14px;
+    padding: 0px 0px 19px 0px;/*14 left right*/
     margin-bottom: 38px;
     
     flex-direction: column;
@@ -1483,12 +1509,7 @@
   .aside {
     width: 100%;
   }
-  
-  .section-new-post {
-	padding-left: 5%;
-	padding-right: 5%;  
-  }
-
+ 
  .aside-article {
     width: 100%;
   }
@@ -1515,15 +1536,7 @@
 	width: 48px;  
   }
   
-  .section-meta {
-	padding-left: 5%;
-	padding-right: 5%;
-  }
-
   .section-content {
-	padding-left: 5%;
-	padding-right: 5%;
-	
 	width: 100%;
   }
   
@@ -1554,7 +1567,7 @@
   }
 
   .product-items {
-	padding: 14px;
+	/*padding: 14px;*/
 	
 	flex-direction: column;
 	align-items: center;
