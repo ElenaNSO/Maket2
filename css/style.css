@@ -1446,7 +1446,8 @@
   }
   .not-reference {
 	display: flex;
-	flex-direction: column;  
+	flex-direction: column; 
+align-items: center;	
   }
   
   .header-title {
