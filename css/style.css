@@ -1447,9 +1447,15 @@
   .not-reference {
 	display: flex;
 	flex-direction: column; 
-align-items: center;	
+    align-items: flex-start;	
   }
   
+  
+  .not-references {
+	display: flex;
+	flex-direction: column; 
+    align-items: center;  
+  }
   .header-title {
 	display: none;
   }
